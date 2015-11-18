@@ -405,8 +405,8 @@ public class Prospector : MonoBehaviour {
 			GTRoundResult.text = "You won this round!\nRound Score: "+score;
 			ShowResultGTs(true);
 			break;
-			GTGameOver.text = "Game Over";
 		case ScoreEvent.gameLoss:
+			GTGameOver.text = "Game Over";
 			// If it is a loss check against the high score
 			if (Prospector.HIGH_SCORE <= score) {
 				print ("You got the high score! High score: " + score);
